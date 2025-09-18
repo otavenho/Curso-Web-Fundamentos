@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Meter e Progress</title>
+    <style>
+      .mep {
+        padding: 25vh;
+        text-align: center;
+        font-size: 25px;
+        accent-color: rgb(247, 0, 231);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mep">
+      <h1>Meter</h1>
+
+      <label for="combustivel">
+        <b>Nível do combustível:</b>
+        <meter
+          id="combustivel"
+          min="0"
+          max="100"
+          low="31"
+          high="91"
+          optimum="92"
+          value="28"
+        ></meter>
+      </label>
+
+      <h1>Progress</h1>
+      <label for="tarefa"
+        ><b>Porcentagem da tarefa:</b>
+        <progress id="tarefa" max="100" value="54">54%</progress>
+      </label>
+      <br /><br />
+      <hr />
+      <br /><br />
+      <form oninput="result.value = a.value * b.value">
+        <input type="number" name="a" id="a" /> x <br />
+        <input type="number" name="b" id="b" /> =
+        <output name="result" for="a b"></output>
+      </form>
+    </div>
+  </body>
+</html>

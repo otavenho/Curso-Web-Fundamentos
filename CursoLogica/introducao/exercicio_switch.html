@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exercicio switch</title>
+  </head>
+  <body>
+    <h1>exercicio switch</h1>
+    <script>
+      let myVar = "null";
+
+      switch (typeof myVar) {
+        case "number":
+          alert("myVar é número");
+          break;
+        case "string":
+          alert("myVar é texto");
+          break;
+        case "boolean":
+          alert("myVar é boleana");
+          break;
+        case "undefined":
+          alert("myVar é undefined");
+          break;
+        default:
+          alert("Nenhum tipo conhecido");
+      }
+    </script>
+  </body>
+</html>

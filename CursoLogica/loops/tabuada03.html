@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Números Pares</title>
+  </head>
+  <body>
+    <h1>Loops - Números Pares</h1>
+
+    <script>
+      let n = parseInt(prompt("Digite um número:"));
+
+      for (let contador = 0; contador <= 1000; contador++) {
+        document.write(n + " x " + contador + ": " + n * contador + "<br>");
+        if (contador % 10 === 0 && contador > 0) {
+          document.write("<hr>");
+        }
+      }
+    </script>
+  </body>
+</html>

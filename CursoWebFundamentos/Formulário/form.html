@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulário</title>
+
+    <style>
+      textarea {
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>Introdução</legend>
+        <label for="">E-mail:</label>
+        <input type="email" name="email" placeholder="meu.email@gmail.com"/>
+        <hr />
+        <label for="">Quantidade de filhos:</label>
+        <input type="number" id="filhos" min="0" max="25" />
+        <hr />
+        <label for="">Data:</label>
+        <input type="date" min="2025-01-01" max="2025-12-31" />
+        <hr />
+        Possui atividade extra?
+        <label> <input type="radio" name="atvExtra" value="s" />Sim </label>
+        <label> <input type="radio" name="atvExtra" value="n" />Não </label>
+      </fieldset>
+      <fieldset>
+        <legend>Área de Interesse</legend>
+
+        <label
+          ><input type="checkbox" name="interesse" value="html" />HMTL</label
+        >
+        <label><input type="checkbox" name="interesse" value="css" />CSS</label>
+        <label
+          ><input
+            type="checkbox"
+            name="interesse"
+            value="javascript"
+          />Javascript</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="interesse"
+            value="python"
+          />Python</label
+        >
+        <label
+          ><input type="checkbox" name="interesse" value="java" />Java</label
+        >
+        <hr />
+        <label for="">Escolha uma Linguagem:</label>
+
+        <select name="linguagem" id="" required multiple size="5">
+          <option value="">-</option>
+          <optgroup label="Frontend">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">Javascript</option>
+          </optgroup>
+
+          <optgroup label="Backend">
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+          </optgroup>
+        </select>
+        ou
+        <input type="text" list="linguagemList" />
+        <datalist id="linguagemList">
+          <option value="HTML"></option>
+          <option value="CSS"></option>
+          <option value="Javascript"></option>
+          <option value="Python"></option>
+          <option value="Java"></option>
+          <option value="PHP"></option>
+        </datalist>
+      </fieldset>
+
+      <fieldset>
+        <legend>Foto 3x4</legend>
+        <input type="file">
+      </fieldset>
+
+      <fieldset>
+        <legend>Mensagem</legend>
+        <textarea
+          name="msg"
+          id=""
+          cols="50"
+          rows="10"
+          maxlength="250"
+        ></textarea>
+        <hr />
+        <textarea cols="50" rows="10" readonly>
+CONTRATO DE UTILIZAÇÃO, regra 1: bla bla. regra 2: bla bla.</textarea
+        >
+        <input type="checkbox" required checked/>Li e concordo
+        <hr />
+        <textarea cols="50" rows="10" disabled>
+CONTRATO DE UTILIZAÇÃO, regra 1: bla bla. regra 2: bla bla.</textarea
+        >
+        <input type="checkbox" required checked/>Li e concordo
+      </fieldset>
+      <input type="hidden" value="123456">
+      <input type="submit" value="Enviar" />
+      <button type="submit"><em>Enviar (com tag Button)</em></button>
+      <input type="button" value="Button">
+    </form>
+  </body>
+</html>
